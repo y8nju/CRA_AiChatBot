@@ -1,0 +1,39 @@
+@import 'styles/vars.scss';
+@import 'styles/commons.scss';
+
+@font-face {
+	font-family: 'Cafe24SsurroundAir';
+	font-weight: 45 920;
+	font-style: normal;
+	font-display: swap;
+	src: local('Cafe24SsurroundAir'), url('/assets/fonts/Cafe24SsurroundAir.woff2') format('woff2-variations');
+}
+
+@font-face {
+	font-family: 'Pretendard Variable';
+	font-weight: 45 920;
+	font-style: normal;
+	font-display: swap;
+	src: local('Pretendard Variable'), url('/assets/fonts/PretendardVariable.woff2') format('woff2-variations');
+}
+:root {
+  font-family: 'Pretendard Variable', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --main-color: $main;
+  --sub-color: $sub;
+  --accent-color: $accent;
+  --neutral-color: $neutral;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: 2.67vw;
+}
+
+main{
+  position: relative;
+  height: 100vh;
+}

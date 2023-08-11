@@ -1,0 +1,33 @@
+@import 'styles/vars.scss';
+
+.commons_info{
+    font-size: $font_size_small;
+
+    @include flex(row, flex-start, center, nowrap, 6px);
+
+    padding: 3px 7px;
+    border-radius: 0.5rem;
+    white-space: break-spaces;
+    width: 70%;
+    box-sizing: border-box;
+
+    &.info{
+        color: $main;
+    }
+
+    &.warning {
+        color : $neutral;
+        border: 0.1rem solid $red;
+        background: $red;
+    }
+    
+    &.error {
+        color: $red;
+    }
+
+    .infoIcon{
+        width: 1rem;
+        height: 1rem;
+        align-self: flex-start;
+    }
+}

@@ -1,0 +1,37 @@
+@import 'styles/vars.scss';
+
+.user_box {
+  @include flex(column, center, center, nowrap, 1rem);
+  @include full_screen;
+  padding-top: 4rem;
+  box-sizing: border-box;
+}
+
+.user_title {
+	font-family: 'Cafe24SsurroundAir';
+  font-size: 2rem;
+  color:$main;
+  // transform: skew(0, -5deg);
+}
+
+.user_input {
+  @include user_input_text;
+}
+
+.input_box {
+  @include flex(column, center, center, nowrap, 0.5rem);
+  width: 100%;
+}
+
+.user_btn {
+  @include main_btn;
+  width: 70%;
+  cursor: pointer;
+}
+
+.error_message {
+  color:$red;
+  text-align: left;
+  width: 65%;
+  white-space: break-spaces;
+}

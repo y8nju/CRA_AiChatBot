@@ -1,0 +1,97 @@
+@import 'styles/vars.scss';
+
+.nav_close_button {
+  position: absolute;
+  top: 3rem;
+  right: 2.5rem;
+  color: $main;
+  cursor: pointer;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 200;
+}
+
+.nav_bar {
+  position: fixed;
+  background-color: $neutral;
+  border-radius: 1rem 0rem 0rem 1rem;
+  box-shadow: 1rem 0.2rem 1rem 1rem rgb(96 96 96 / 60%);
+  width: 70%;
+  height: 100vh;
+  z-index: 500;
+  top: 0;
+  right: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: $main;
+}
+
+.nav_list {
+  @include flex(column, flex-start, flex-start, nowrap, 0);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 6rem 0 2rem;
+}
+
+.nav_list_item {
+  list-style-type: none;
+  padding: 1rem 3rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.nav_header {
+  @include full_screen;
+  @include flex(row, space-between, center, nowrap, 0);
+  padding: 1.5rem 1.5rem 0.6rem;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+}
+
+.logo_img {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.nav_menu_icon {
+  font-size: medium;
+  color: $main;
+  cursor: pointer;
+}
+
+.nav_logout_text {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: $main;
+  margin-top: auto;
+}
+
+.snackbar {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  width: 50%;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  bottom: 4vh;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 8px;
+  text-align: center;
+  transition: all 1s ease-in-out;
+  font-size: 1rem;
+  @media (min-width: 1024px) {
+    width: 30%;
+  }
+}

@@ -1,0 +1,56 @@
+$main: #6D9886;
+$sub: #F2E7D5;
+$accent: #393E46;
+$neutral: #F7F7F7;
+$red: #F44336;
+$gray: #a2a2a2;
+
+$font_size_small : 10px;
+$font_size_middle : 14px;
+$font_size_large : 18px;
+
+
+@mixin flex ($direction, $justify, $items, $wrap, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $items;
+  flex-wrap: $wrap;
+  gap: $gap;
+}
+
+@mixin main_btn {
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: $main;
+  color: $neutral;
+}
+
+@mixin user_input_text{
+  border: 1px solid $neutral;
+  padding: 0.5rem;
+  background-color: $neutral;
+  border-radius: 0.5rem;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+@mixin full_screen {  
+    width:100vw;
+}
+
+@mixin max_width ($max_width) {
+  max-width: $max_width;
+}
+
+
+@keyframes fadeIn {
+ 0%{
+  opacity: 0;
+ }50%{
+   opacity: 0.5;
+ }100%{
+opacity: 1;
+ }
+}
